@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.miniSlider{
+    width: 500px;
+    margin: auto;
+    ul{
+        li{
+            width: 15%;
+            margin: 10px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+#slider{
+width: 500px;
+margin: auto;
+position: relative;
+overflow: hidden;
+
+#prev,#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#prev{
+    left: 15px;
+    
+}
+#next{
+    right: 15px;
+}
+    ul{
+        position: relative;
+        transition: .3s;
+        left: 0;
+        li{
+            width: 500px;
+            img{
+                width: 500px;
+                object-fit: cover;
+                height: 500px;
+            }
+        }
+    }
+}
